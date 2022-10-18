@@ -36,26 +36,26 @@ public class Ejercicio1 {
 			
 			System.out.println("El número está fuera de los límites permitidos ");
 	
-		} else if (num < 10) {//If the num
+		} else if (num < 10) {//If the number has one digit, it will be palindromic, and we write it down
 			
 			System.out.println("El número es capicúa");
 
 		
-			} else if (num < 100 && num/10 == num % 10) {
+			} else if (num < 100 && num/10 == num % 10) { //If the number has 2 digits, we watch if the two digits are the same
 		
-					System.out.println("El número introducido es capicúa");
+					System.out.println("El número introducido es capicúa");//If they are the same digits, we write it down
 
-			 } else if (num < 1000 && num / 100 == num%10) { 
+			 } else if (num < 1000 && num / 100 == num%10) { //If the number has 3 digits, we watch if the first and third digits are the same
 				 
-				 System.out.println("El número introducido es capicúa");
+				 System.out.println("El número introducido es capicúa");//If they are the same digits, we write it down
 			
 			 } else if (num < 10000 && num / 1000 == num % 10 && ((num/100)%10)==((num/10)%10)){ 
 				 
-				 System.out.println("El número introducido es capicúa");	 
+				 System.out.println("El número introducido es capicúa"); //If the first and the fourth & the second and the third are the same digits, we write it down 
 			 
 
 			 } else 
-				 System.out.println("El número introducido no es capicúa");
+				 System.out.println("El número introducido no es capicúa");//If the conditions aren't true, we write it down
 			
 			 sc.close();
 }
