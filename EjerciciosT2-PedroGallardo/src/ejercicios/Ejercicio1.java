@@ -25,8 +25,7 @@ public class Ejercicio1 {
 	public static void main(String[] args) {
 
 		int num; //We declare a variable to save the number that the user writes down
-		int div = num / 100;
-		int resto = num%10;
+
 		
 		Scanner sc = new Scanner(System.in);//The scanner is named
 		

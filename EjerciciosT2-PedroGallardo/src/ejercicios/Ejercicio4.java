@@ -10,15 +10,6 @@ public class Ejercicio4 {
 	String un;
 	String nu;
 	
-	final String DI = "dieci";
-	final String VEI = "veinti";
-	final String TRE = "treinta";
-	final String CUA = "cuarenta";
-	final String CIN = "cincuenta";
-	final String SES = "sesenta";
-	final String SET = "setenta";
-	final String OCH = "ochenta";
-	final String NOV = "noventa";
 	Scanner sc = new Scanner(System.in);
 	
 	System.out.println("Introduzca un número del 1 al 99");
@@ -55,7 +46,6 @@ public class Ejercicio4 {
 		}
 	default -> "";
 
-	
 	
 };
 }

@@ -3,40 +3,34 @@ package ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio7 {
-	int num; //We declare a variable to save the number that the user writes down
-	
-	Scanner sc = new Scanner(System.in);//The scanner is named
-	
-	
-	System.out.println("Introduzca un número entre 0 y 9999");//This line asks for a number 
-	num = sc.nextInt();//The program saves a number that the user writes down
-	
-	if (num < 0 || num > 9999) { //If the number is not in the limits, this condition write it down
-		
-		System.out.println("El número está fuera de los límites permitidos ");
+	public static void main(String[] args) {
 
-	} else if (num < 10) {//If the num
-		
-		System.out.println("El número es capicúa");
+		int hor;
+		int min;
+		int seg;
 
-	
-		} else if (num < 100 && num/10 == num % 10) {
-	
-				System.out.println("El número introducido es capicúa");
+		Scanner sc = new Scanner(System.in);
 
-		 } else if (num < 1000 && num / 100 == num%10) { 
-			 
-			 System.out.println("El número introducido es capicúa");
-		
-		 } else if (num < 10000 && num / 1000 == num % 10 && ((num/100)%10)==((num/10)%10)){ 
-			 
-			 System.out.println("El número introducido es capicúa");	 
-		 
+		System.out.println("Introduzca los segundos");
+		seg = sc.nextInt();
 
-		 } else 
-			 System.out.println("El número introducido no es capicúa");
+		System.out.println("Introduzca los minutos");
+		min = sc.nextInt();
+
+		System.out.println("Introduzca las horas");
+		hor = sc.nextInt();
 		
-		 sc.close();
+		seg = (seg + 1 + hor*3600 + min * 60);
+
+		hor = seg / 3600; // Convertimos segundos a horas
+		min = (seg % 3600) / 60; // Convertimos segundos a minutos con el resto de la operación anterior
+		seg = (seg % 60);// Los segundos serán el resto de dividir el total de ellos entre 60 (pasar a
+							// minutos)
+
+		System.out.println("Son " + hor + " horas," + min + " minutos, y " + seg + " segundos si añadimos un segundo"); // Mostramos
+		// el
+		// resultado
+		sc.close();// Cerramos el escáner
+
+	}
 }
-}
-

@@ -15,7 +15,8 @@ public static void main(String[] args) {
 	
 	if (num < 0) {
 		sol = -num;
-	}else {
+	} else {
+		
 		sol = num;
 	}
 	
