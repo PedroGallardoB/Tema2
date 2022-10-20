@@ -7,7 +7,7 @@ public class Ejercicio4 {
 	public static void main(String[] args) {
 
 		/*
-		 * PRUEBAS TRAS CODIFICAR: Hay que commprobar que resultados de todos los
+		 * PRUEBAS TRAS CODIFICAR: Hay que comprobar que el resultados de todos los
 		 * bloques de if sean los esperados. EJEMPLOS DE PRUEBAS REALIZADAS SEGÚN LA
 		 * SITUACIÓN:
 		 * 

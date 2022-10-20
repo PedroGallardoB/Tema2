@@ -29,7 +29,7 @@ public static void main(String[] args) {
 
 	System.out.println("La solución es " + num); //Imprime la solución
 	
-	sc.close(); // Cerramos el escáner
+	sc.close(); //Cerramos el escáner
 
 }
 }
