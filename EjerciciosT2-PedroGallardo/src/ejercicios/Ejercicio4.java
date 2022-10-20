@@ -24,23 +24,24 @@ public class Ejercicio4 {
 		 * Output: sesenta y siete CORRECTO
 		 */
 
-		String unidad; //En esta variable guardaremos las unidades
-		int numero; //En esta variable guardaremos el número que introduce el usuario
-		String decena;//En esta variable guardaremos las decenas
+		String unidad; // En esta variable guardaremos las unidades
+		int numero; // En esta variable guardaremos el número que introduce el usuario
+		String decena;// En esta variable guardaremos las decenas
 
-		Scanner sc = new Scanner(System.in); //Llamamos al escáner
+		Scanner sc = new Scanner(System.in); // Llamamos al escáner
 
-		System.out.println("Introduzca un número del 1 al 99"); //Pedimos un número al usuario
+		System.out.println("Introduzca un número del 1 al 99"); // Pedimos un número al usuario
 
-		numero = sc.nextInt(); //Leemos el número
+		numero = sc.nextInt(); // Leemos el número
 
-		// Bloque de asignar unidades (Da valores a las unidades y los guarda en la variable unidad
+		// Bloque de asignar unidades (Da valores a las unidades y los guarda en la
+		// variable unidad
 
-		unidad = switch (numero % 10) { //Hacemos el resto entre diez del número introducido, porque será la unidad
+		unidad = switch (numero % 10) { // Hacemos el resto entre diez del número introducido, porque será la unidad
 		case 1 -> {
-			
-			//Asignamos valores al resto con la función yield
-			
+
+			// Asignamos valores al resto con la función yield
+
 			yield "uno";
 		}
 		case 2 -> {
@@ -71,18 +72,19 @@ public class Ejercicio4 {
 
 		};
 
-		//Bloque de asignar decenas
-		//Las decenas se guardan en decena como resultado del resto de dividir entre 10  un número ya dividido entre 10
-		decena = switch (numero / 10 % 10) { 
+		// Bloque de asignar decenas
+		// Las decenas se guardan en decena como resultado del resto de dividir entre 10
+		// un número ya dividido entre 10
+		decena = switch (numero / 10 % 10) {
 
 		case 1 -> {
-			yield "dieci"; //No llevarán "y"
+			yield "dieci"; // No llevarán "y"
 		}
 		case 2 -> {
 			yield "veinti";
 		}
 		case 3 -> {
-			yield "treinta"; //Llevarán "y"
+			yield "treinta"; // Llevarán "y"
 		}
 		case 4 -> {
 			yield "cuarenta";
@@ -106,16 +108,16 @@ public class Ejercicio4 {
 
 		};
 
-		//Bloque de imprimir excepciones
-		
+		// Bloque de imprimir excepciones
+
 		if (numero <= 9) {
 
-			System.out.println("El número es " + unidad); //Las unidades, que no llevan decenas (menores de 10) se imprimen aquí
+			System.out.println("El número es " + unidad); // Las unidades, que no llevan decenas (menores de 10) se
+															// imprimen aquí
 
-			
-			//Seleccionamos números mayores que nueve y menores que 16 (incluimos el 200)
-			
-		} else if (numero > 9 && numero < 16 || numero == 20) { 
+			// Seleccionamos números mayores que nueve y menores que 16 (incluimos el 200)
+
+		} else if (numero > 9 && numero < 16 || numero == 20) {
 
 			switch (numero) {
 
@@ -143,20 +145,19 @@ public class Ejercicio4 {
 			}
 			}
 
-			
-			//Bloque de imprimir dos dígitos con y sin "y"
-			
-		} else if (numero > 10 && numero <= 29) { //Si el número está entre 11 y 29 se ejecuta
+			// Bloque de imprimir dos dígitos con y sin "y"
 
-			System.out.println("El número es " + decena + unidad); //Imprime números sin "y"
+		} else if (numero > 10 && numero <= 29) { // Si el número está entre 11 y 29 se ejecuta
 
-		} else if (numero > 29) { //Si el número es mayor de 29 se ejecuta
+			System.out.println("El número es " + decena + unidad); // Imprime números sin "y"
 
-			System.out.println("El número es " + decena + " y " + unidad); //Imprime números con "y" 
+		} else if (numero > 29) { // Si el número es mayor de 29 se ejecuta
+
+			System.out.println("El número es " + decena + " y " + unidad); // Imprime números con "y"
 
 		}
 
-		sc.close(); //Cerramos el escáner
+		sc.close(); // Cerramos el escáner
 	}
 
 }
