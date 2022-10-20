@@ -11,7 +11,7 @@ public static void main(String[] args) {
 	
 	Scanner sc = new Scanner(System.in); //Llamamos al escáner
 	
-	//Generamos dos número aleatorio multiplicando un número del 0 al 1 por 99
+	//Generamos dos número aleatorio multiplicando un número del 0 al 1 por 99, es necesario castear a int la operación
 	num1 = (int)(Math.random() *99); 
 	num2 = (int)(Math.random() *99); 
 	
