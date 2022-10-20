@@ -5,7 +5,14 @@ import java.util.Scanner;//The scanner is imported
 public class Ejercicio2 {
 
 	/*Para probar este programa se introducen DNIs que terminen en cada una de las letras,
-	y vemos si en algún caso da error */
+	y vemos si en algún caso da error
+	
+	 Ejemplos de pruebas realizadas para comprobar los resultados con imputs y outputs:
+	 
+	 Imput: 60436257/ Output: P		CORRECTO
+	 Imput: 64314131/ Output: J 	CORRECTO
+	 Imput: 19597593/ Output: Y		CORRECTO
+	 Imput: 62486441/ Output: H		CORRECTO*/
 	
 
 		public static void main(String[] args) {

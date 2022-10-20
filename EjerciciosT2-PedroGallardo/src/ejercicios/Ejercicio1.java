@@ -5,7 +5,7 @@ import java.util.Scanner;//The scanner is imported
 public class Ejercicio1 {
 
 	/*
-	Tests of conditionals:
+	Tests of conditionals while codifing:
 	
 	-The first if checks if the number that the user wrote was in the limit, to test it out,
 	we introduce a bigger number, and a lower number than the ones that are allowed.
@@ -20,6 +20,16 @@ public class Ejercicio1 {
 	 -We will do the same tests with each one of the following conditionals than with the ones with three.
 	
 	-Finally, we would have tested all the options
+	
+		EXAMPLES WITH IMPUTS:
+		
+		Imput:3			Output: "El número introducido es capicúa"		CORRECT
+		Imput:11		Output: "El número introducido es capicúa"		CORRECT
+		Imput:33		Output: "El número introducido no es capicúa"	CORRECT
+		Imput:313		Output: "El número introducido es capicúa"		CORRECT
+		Imput:178		Output: "El número introducido no es capicúa"	CORRECT
+		Imput:7839		Output: "El número introducido no es capicúa"	CORRECT
+		Imput:1991		Output: "El número introducido es capicúa"		CORRECT
 	 */
 	
 	public static void main(String[] args) {
