@@ -19,6 +19,7 @@ public class Ejercicio2 {
 			System.out.println("Introduzca un número del DNI para averiguar su letra");//This line asks for a number 
 			num = sc.nextInt();//The program saves a number that the user writes down
 			
+			//En función del resultado de dividir entre 23 asignamos una letra
 			switch (num%23) {
 			case 0:
 				System.out.println("Su letra es T");
@@ -90,6 +91,6 @@ public class Ejercicio2 {
 				System.out.println("Su letra es E");
 				break;	
 		}
-			sc.close();
+			sc.close();//Cerramos el escáner
 		}
 		}

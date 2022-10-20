@@ -58,7 +58,7 @@ public class Ejercicio1 {
 			 } else 
 				 System.out.println("El número introducido no es capicúa");//If the conditions aren't true, we write it down
 			
-			 sc.close();
+			 sc.close(); //Cerramos el escáner
 }
 }
 
