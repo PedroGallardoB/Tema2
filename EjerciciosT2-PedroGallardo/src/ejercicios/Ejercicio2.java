@@ -4,9 +4,8 @@ import java.util.Scanner;//The scanner is imported
 
 public class Ejercicio2 {
 
-	/*
-	
-	 */
+	/*Para probar este programa se introducen DNIs que terminen en cada una de las letras,
+	y vemos si en algún caso da error */
 	
 
 		public static void main(String[] args) {
