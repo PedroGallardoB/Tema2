@@ -26,12 +26,11 @@ public class Ejercicio1 {
 	 * 
 	 * EXAMPLES WITH IMPUTS:
 	 * 
-	 * Imput:3 Output: "El número introducido es capicúa" CORRECT Imput:11 Output:
-	 * "El número introducido es capicúa" CORRECT Imput:33 Output:
-	 * "El número introducido no es capicúa" CORRECT Imput:313 Output:
-	 * "El número introducido es capicúa" CORRECT Imput:178 Output:
-	 * "El número introducido no es capicúa" CORRECT Imput:7839 Output:
-	 * "El número introducido no es capicúa" CORRECT Imput:1991 Output:
+	 * Imput:3 Output: "El número introducido es capicúa" CORRECT Imput:11 Output: "El número introducido es capicúa" CORRECT 
+	 * Imput:33 Output: "El número introducido no es capicúa" CORRECT 
+	 * Imput:313 Output:"El número introducido es capicúa" CORRECT 
+	 * Imput:178 Output: "El número introducido no es capicúa" CORRECT 
+	 * Imput:7839 Output: "El número introducido no es capicúa" CORRECT Imput:1991 Output:
 	 * "El número introducido es capicúa" CORRECT
 	 */
 
