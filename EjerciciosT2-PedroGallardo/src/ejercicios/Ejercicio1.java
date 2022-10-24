@@ -49,7 +49,7 @@ public class Ejercicio1 {
 
 		} else if (num < 10) {// If the number has one digit, it will be palindromic, and we write it down
 
-			System.out.println("El número es capicúa");
+			System.out.println("El número introducido es capicúa");
 
 		} else if (num < 100 && num / 10 == num % 10) { // If the number has 2 digits, we watch if the two digits are
 														// the same
